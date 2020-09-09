@@ -1,0 +1,591 @@
+/* header  */
+html,body{
+    width:100%;
+    overflow-x:hidden;
+    scroll-behavior:smooth;
+}
+.main img{
+  border-radius: 70%;
+}
+.main h1{
+   color: green;
+   padding-left: 260px;
+   margin-top:-100px;
+   /* padding-bottom:-30px; */
+}
+
+/* nav bar decoration  */
+.nav{
+    float:right;
+    margin-top:-30px;
+}
+.nav a{
+    text-decoration: none;
+    /* padding-left:70px; */
+    color: green;
+    font-size: large;
+    margin-right: 40px;
+}
+.nav a:hover{
+    /* background-color:rgb(189, 187, 187); */
+    text-decoration:none;
+    color:yellow;
+    
+
+}
+hr{
+    margin-top:-20px;
+}
+
+/* cover  */
+.cover{
+    background-image: url('img/tRvL31.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding:9.5%;
+   
+}
+article{
+    color: white;
+    border:2px solid greenyellow;
+    width:40%;
+    padding:20px;
+    text-align: center;
+    padding-bottom:40px;
+}
+article p{
+    padding-bottom:20px;
+}
+.learn{
+    text-decoration:none;
+    border: 2px solid yellow;
+    border-radius:20px;
+    color: honeydew;
+    background-color:yellow;
+    padding:7px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.learn:hover{
+    color:yellow;
+    background: none;
+}
+.learn:focus,.learn:active{
+    outline: none;
+    box-shadow: none;
+}
+
+.ex{
+    text-align: center;
+    /* border:1px solid yellow; */
+    /* margin-right:20%; */
+    background-color: yellow;
+    border-radius: 50%;
+}
+.baton{
+  background:greenyellow;
+  padding: 10px 30px;
+  border: 0;
+  cursor: pointer;
+  font-weight: bold;
+  color: #fff;
+  margin-top: 4px;
+  margin-top:-20px;
+  border-radius: 25px 25px;
+  text-align: center;
+  border: 2px solid greenyellow;
+  margin-left:45%;
+}
+.baton:hover{
+  color:greenyellow;
+    background: white;
+}
+.baton:focus,.baton:active{
+  outline: none;
+  box-shadow: none;
+}
+
+.search{
+  margin-left:20%;
+  margin-top:-10px;
+}
+.batn{
+    background:greenyellow;
+    /* padding: 10px 30px; */
+    border: 0;
+    cursor: pointer;
+    font-weight: bold;
+    color: #fff;
+    /* margin-top: 4px; */
+    margin-top:-20px;
+    border-radius: 25px 25px;
+    text-align: center;
+    border: 2px solid greenyellow;
+    /* margin-left:45%; */
+}
+.batn:hover{
+    color:greenyellow;
+    background: white;
+}
+.batn:focus,.batn:active{
+    outline: none;
+    box-shadow: none;
+}
+
+/* movies  */
+.header{
+    background-color: white;
+    box-shadow: 1px 2px 3px grey;
+    padding:1px;
+}
+h2{
+    color:white;
+    text-align: center;
+    background-color:green;
+}
+.more{
+    float: right;
+    margin-top: -45px;
+    text-decoration:none;
+    border: 2px solid yellow;
+    border-radius:20px;
+    color: honeydew;
+    background-color:none;
+    padding:7px;
+    cursor: pointer;
+    font-weight: bold;
+    height:38px;
+}
+.more:hover{
+    color:green;
+    background:white;
+}
+.more:focus,.more:active{
+    outline: none;
+    box-shadow: none;
+}
+* {
+    box-sizing: border-box;
+  }
+  
+/* Float four columns side by side */
+.column {
+    float: left;
+    width: 20%;
+    padding: 0 10px;
+    padding-top:15px;
+    padding-bottom:25px; 
+  }
+  
+  /* Remove extra left and right margins, due to padding */
+  .row {margin: 0 -5px;}
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Style the counter cards */
+  .card {
+    box-shadow: 0 4px 8px grey;
+    padding: 16px;
+    height:300px;
+    max-width: 200px;
+    /* margin: auto; */
+    font-family: arial;
+  }
+  
+  .price {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+  }
+  .price1{
+    color: grey;
+    font-size: 10px;
+    text-align: center;
+    height:200px;
+  }
+  .dark{
+      border-radius:50%;
+      background-color:black;
+      color:white;
+  }
+  .card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  .card button:hover {
+    opacity: 0.7;
+  }
+
+.zoom {
+    transition: transform .2s;
+  }
+  
+  .zoom:hover {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5); 
+  }
+  /* dark mode  */
+
+  .dark-mode {
+    background-color: black;
+    color:green;
+  }
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+/* Button used to open the chat form - fixed at the bottom of the page */
+.open-button {
+    background-color: #555;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 280px;
+  }
+  
+  /* The popup chat - hidden by default */
+  .chat-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+  }
+  
+  /* Add styles to the form container */
+  .form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+  }
+  
+  /* Full-width textarea */
+  .form-container textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+    resize: none;
+    min-height: 200px;
+  }
+  
+  /* When the textarea gets focus, do something */
+  .form-container textarea:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  /* Set a style for the submit/send button */
+  .form-container .btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+  }
+  
+  /* Add a red background color to the cancel button */
+  .form-container .cancel {
+    background-color: red;
+  }
+  
+  /* Add some hover effects to buttons */
+  .form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+  }
+  #promo{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('img/HD-Dirilis-Ertugrul-Wallpaper.jpg');
+    background-size:cover;
+    background-position:center;
+    color: #fff;
+    background-attachment: fixed;
+    padding: 50px;
+    text-transform: capitalize;
+}
+#promo .container h5{
+    font-size: 38px;
+    font-weight: bold;
+    padding: 20px 0;
+}
+.offers .fa{
+  font-size:20px;
+  color:green;
+}
+.offers span{
+  margin-left: 10px;
+  font-size: 22px;
+  letter-spacing: 5px;
+}
+#promo .btn{
+  background:green;
+  border: 2px solid greenyellow;
+  border-radius: 0;
+  padding: 7px 23px;
+}
+#promo .btn:hover{
+  background: none;
+}
+.product_line{
+  font-size: 18px;
+}
+.product_headings{
+  margin:0 10px;
+}
+.product_line:before,.product_line:after{
+  width: 47%;
+  margin: 8px 178px;
+  height:4px;
+  border-bottom:1.3px dotted darkgray;
+  border-top:1.3px dotted darkgray;
+}
+.product_line:after{
+  margin-top: -30px;
+}
+  .subcribe-latest{
+    display: flex;
+    text-transform:capitalize;
+}
+.subcribe-latest{
+  display: flex;
+  text-transform:capitalize;
+}
+.subscribe{
+  height: 240px;
+  width: 70%;
+  background:white;
+  margin: auto;
+  box-shadow: 0 0 5px 0  greenyellow;
+  z-index:8;
+  border-radius:10px 10px;
+  margin-bottom:-50px;
+}
+.subscribe h3{
+  color:green;
+  margin-top:30px;
+  padding: 7px 13px;
+}
+.subscribe p{
+  color:#000;
+  font-size: 13px;
+}
+form{
+  margin-top: 40px;
+  padding: 5px;
+}
+input{
+  padding: 5px;
+  outline: none;
+}
+input:active,input:focus{
+  border-color: transparent;
+  border-bottom: 2px solid green;
+}
+.subscribe .btn{
+  outline: none;
+  margin-left: 10px;
+  border: 2px solid greenyellow;
+  background:green;
+  color:#fff;
+}
+.subscribe .btn:focus,.subscribe .btn:hover{
+  background:green;
+  outline: none;
+  border:2px solid greenyellow;
+}
+
+.gallery{
+  display: grid;
+  grid-template-columns: repeat(9, 50px);
+  grid-template-rows: repeat(5, 50px);
+  grid-gap: 8px;
+  margin-top: 50px;
+  margin-left:20px;
+}
+.gallery__item img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.gallery__item img:hover{
+  transform:scale(1.1);
+  -webkit-transform:scale(1.1);
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.gallery__item-1{
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.gallery__item-2{
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+.gallery__item-3{
+  grid-column-start: 5;
+  grid-column-end: 7;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+.gallery__item-4{
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 5;
+}
+.gallery__item-5{
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 5;
+}
+.gallery__item-6{
+  grid-column-start: 5;
+  grid-column-end: 7;
+  grid-row-start: 3;
+  grid-row-end: 5;
+}
+.gallery__item-7{
+  grid-column-start: 7;
+  grid-column-end: 9;
+  grid-row-start: 1;
+  grid-row-end:3;
+}
+.gallery__item-8{
+  grid-column-start: 7;
+  grid-column-end: 9;
+  grid-row-start: 3;
+  grid-row-end:5;
+}
+.office{
+  height:33px;
+  width: 33px;
+  position: absolute;border-radius: 50%;
+  background: green;
+  color: #fff;
+  border: 2px solid greenyellow;
+  display: flex;
+  margin-left:60px;
+  justify-content: center;
+  align-items: center;
+}
+.con h5{
+  font-size:18px;
+  font-weight: 100;
+  display:block;
+  margin-top: 50px;
+  margin-left: -40px;
+  color: green;
+}
+.first{
+  margin-bottom:-30px;
+}
+.con h5 span{
+  font-size: 14px;
+  font-weight: 400;
+  color:green;
+  line-height:30px;
+  /* margin-left: 60px; */
+}
+.links{
+  list-style: none;
+  margin-top:28px;
+}
+.links  li{
+  line-height: 40px;
+  text-align:left;
+  /* margin: 0 140px; */
+  color: green;
+}
+.links a{
+  color: inherit;
+}
+.back-to-top {
+  position: fixed;
+  display: none;
+  background: rgba(0, 0, 0, 0.2);
+  color: #fff;
+  padding: 6px 12px 9px 12px;
+  font-size: 16px;
+  border-radius: 2px;
+  left: 15px;
+  bottom: 15px;
+  transition: background 0.5s;
+  z-index:12;
+}
+.back-to-top:hover{
+    background-color:deepskyblue;
+    color:#fff;
+}
+#footer{
+    background: white;
+    padding: 12px;
+    color: green;
+    text-align: center;
+}
+.column1{
+  float: left;
+  padding:10px 30px;
+  height:370px;
+  text-align: center;
+  text-transform:capitalize;
+  background:#000;
+}
+.left, .right {
+width: 30%;
+}
+
+.middle {
+width: 40%;
+}
+.column1 h3{
+  color: #fff;
+  padding-top:60px;
+  font-size: 25px;
+  font-weight: bolder;
+  margin-right: 10px;
+}
+.row:after{
+  content: '';
+  display: table;
+  clear: both;
+}
